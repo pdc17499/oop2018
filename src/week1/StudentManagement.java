@@ -41,18 +41,19 @@ public class StudentManagement {
 
     void removeStudent(String id) {
 
-        for( int i = 0 ; i < 100 ; i ++ )
+        for( int i = 0 ; i < max ; i ++ )
         {
             int sinhvienthuN;
-            if (students[i].getId() == id )
+            if (students[i].getId().equals(id) )
             {
                 sinhvienthuN = i;
-                for(int j = i ; j < 100 ; j++)
+
+                for(int j = i ; j < max-1  ; j++)
                 {
                     students[j] = students[j+1];
                 }
-                max = max - 1;
 
+                max = max - 1;
             }
         }
     }
