@@ -7,20 +7,24 @@ public class StudentManagement {
        Student[] students=new Student[max];
 
     public boolean sameGroup(Student s1, Student s2) {
-      return (s1.getGroup().equals(s2.getGroup()));
+      return (s1.getGroup() == s2.getGroup());
 
     }
 
     void studentsByGroup() {
 
-        for (int i=0;i<max-1;i++)
-            for (int j=1;j<max;j++)
-                if (students[i].getGroup().compareTo(students[j].getGroup())<0) {
-                    Student A = new Student();
-                    A = students[i];
+        for (int i=0;i<max-1;i++){
+            Student A = new Student(students[i]);
+
+            for (int j=i+1;j<max;j++) {
+                if (students[i].getGroup().compareTo(students[j].getGroup()) < 0) {
+
                     students[i] = students[j];
                     students[j] = A;
                 }
+            }
+        }
+
 
         String B = " ";
          int i=0;
