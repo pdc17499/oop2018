@@ -19,4 +19,10 @@ public class Task1 {
 
         return fibonacci(n-1)+fibonacci(n-2);
     }
+    public static void main(String[] args) {
+        int a= 15;
+        int b= 5;
+        System.out.println(gcd(a,b));
+        System.out.println(fibonacci(10));
+    }
 }
