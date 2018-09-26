@@ -9,8 +9,7 @@ public class Task1 {
             if(a>b) a=a-b;
             if(b>a) b=b-a;
         }
-       System.out.println(a);
-        return 0;
+      return a;
     }
 
     public static int fibonacci(int n) {
