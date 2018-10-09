@@ -7,3 +7,124 @@
  * @version 0.1
  */
 package week4.task1;
+class HoaQua {
+    public String ngaynhap;
+    public int soluong;
+    public String getngaynhap() {
+        return ngaynhap;
+    }
+    public void setngaynhap(String n) {
+
+        this.ngaynhap=n;
+
+    }
+    public int getSoluong() {
+        return soluong;
+    }
+    public void  setSoluong(int n) {
+      this.soluong=n;
+    }
+    public void GT(){
+        System.out.println("Mua vao   "+ngaynhap+" voi so luong: "+soluong );
+    }
+
+}
+
+class Cam extends HoaQua{
+    private String nguongoc;
+    public int giaban;
+    public int getgiaban() {
+        return giaban;
+    }
+    public void setgiaban(int n) {
+        this.giaban=n;
+    }
+    public String getNguongoc(){
+        return  this.nguongoc;
+    }
+    public void setNguongoc(String n) {
+        this.nguongoc=n;
+    }
+}
+
+class Tao extends  HoaQua{
+    public String mausac;
+    public int giaban;
+
+    public int getgiaban() {
+        return giaban;
+    }
+    public void setgiaban(int n) {
+        this.giaban=n;
+    }
+
+
+    public String getMausac() {
+        return mausac;
+    }
+    public void setMausac(String d) {
+        this.mausac= d;
+    }
+
+
+}
+
+class CamThanhPhong extends Cam{
+    public   String muivi;
+    private  int can;
+    public int getCan(){
+        return  can;
+    }
+    public  void setCan(int a){
+        can=a;
+
+    }
+
+    public String getMuivi() {
+        return muivi;
+    }
+    public void setMuivi(String i) {
+        this.muivi = i;
+    }
+
+}
+class CamSanh extends Cam {
+    public int cannang;
+    public String hinhdang;
+
+    public int getCannang() {
+        return cannang;
+    }
+
+    public void setCannang(int n) {
+        this.cannang = n;
+    }
+
+    public String getHinhdang() {
+        return hinhdang;
+    }
+
+    public void setHinhdang(String d) {
+       hinhdang = d;
+    }
+
+}
+
+
+ class  Main{
+
+    public static void main(String []args ) {
+
+        HoaQua k = new HoaQua();
+        k.setngaynhap("17/4/2018");
+        k.setSoluong(100);
+        k.GT();
+        System.out.println("");
+
+
+        }
+
+        }
+
+
+
