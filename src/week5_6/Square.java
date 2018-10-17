@@ -3,15 +3,13 @@ package week5_6;
 
 public class Square extends Rectangle {
 
-    public Square(){
+    public Square(Point center, double side) {
+        super(center, side, side);
     }
 
-    public Square(double side){
-        super(side,side);
+    public Square(String color, boolean filled, Point center, double side) {
+        super(color, filled, center, side, side);
     }
-    public Square(double side,String color,boolean filled){
-        super(side,side,color,filled);}
-
     public double getSide(){
         return super.getWidth();
     }

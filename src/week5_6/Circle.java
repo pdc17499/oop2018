@@ -3,20 +3,22 @@ package week5_6;
 
 public class Circle extends Shape {
     final double PI = 3.14;
-    private double radius = 1.0;
-
+    private double radius;
+    private Point center;
     public Circle() {
 
     }
 
-    public Circle(double radius) {
+    public Circle(double radius, Point center) {
         this.radius = radius;
+        this.center = center;
     }
 
-    public Circle(double radius, String color, boolean filled) {
+
+    public Circle(String color, boolean filled, double radius, Point center) {
+        super(color, filled);
         this.radius = radius;
-        setColor(color);
-        setFilled(filled);
+        this.center = center;
     }
 
     public double getRadius() {
@@ -25,6 +27,14 @@ public class Circle extends Shape {
 
     public void setRadius(double radius) {
         this.radius = radius;
+    }
+
+    public Point getCenter() {
+        return center;
+    }
+
+    public void setCenter(Point center) {
+        this.center = center;
     }
 
     //tinh dien tich

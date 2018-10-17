@@ -1,20 +1,21 @@
 package week5_6;
 
 public class Rectangle extends Shape {
+    private Point center;
     private double width;
     private double length;
 
-    public Rectangle() {
 
-    }
 
-    public Rectangle(double width, double length) {
-        this.length = length;
-        this.width = width;
-    }
-
-    public Rectangle(double width, double length, String color, boolean filled) {
+    public Rectangle(String color, boolean filled, Point center, double width, double length) {
         super(color, filled);
+        this.center = center;
+        this.width = width;
+        this.length = length;
+    }
+
+    public Rectangle(Point center, double width, double length) {
+        this.center = center;
         this.width = width;
         this.length = length;
     }

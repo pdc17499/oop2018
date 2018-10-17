@@ -1,6 +1,6 @@
 package week5_6;
 
-public class Shape{
+public abstract class Shape{
     public String color ;
     public  boolean filled;
 

@@ -3,30 +3,35 @@ package week5_6;
 import java.util.ArrayList;
 
 public class Diagram {
-    private ArrayList<Layer> layers;
+    private ArrayList<Layer> layer;
 
 
-    public Diagram(ArrayList<Layer> layers) {
-        this.layers = layers;
+    public Diagram(ArrayList<Layer> layer) {
+        this.layer= layer;
     }
 
     public Diagram() {
-        this.layers = new ArrayList<>();
+        this.layer = new ArrayList<>();
     }
 
-    public ArrayList<Layer> getLayers() {
-        return layers;
+    public ArrayList<Layer> getLayer() {
+        return layer;
     }
 
-    public void setLayers(ArrayList<Layer> layers) {
-        this.layers = layers;
+    public void setLayers(ArrayList<Layer> layer) {
+        this.layer = layer;
     }
 
     public void addLayer(Layer layer) {
-        this.layers.add(layer);
+        this.layer.add(layer);
     }
 
+    public void removeCircle() {
+        for (Layer k : layer ) {
 
+            k.removeCircle();
+        }
+    }
 
 
 }
