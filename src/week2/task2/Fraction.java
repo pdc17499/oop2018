@@ -38,9 +38,9 @@ public class Fraction {
         subtract.numerator=this.numerator*other.denominator-other.numerator*this.denominator;
         subtract.denominator=this.denominator*other.denominator;
         System.out.println(subtract.numerator + "/" + subtract.denominator);
-        return subtract;
+        return subtract ;
 
-        // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
+
     }
 
     public Fraction multiply(Fraction other) {
