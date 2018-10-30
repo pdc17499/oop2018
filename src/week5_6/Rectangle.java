@@ -1,6 +1,6 @@
 package week5_6;
 
-public class Rectangle extends Shape {
+public class   Rectangle extends Shape {
     private Point center;
     private double width;
     private double length;
