@@ -12,12 +12,14 @@ class ExpresstionTest {
         Square square2 = new Square (add2);
         System.out.println (square2.evaluate ());
 
-        Division div = new Division(new Numeral(6),new Numeral(2));
+        Division div = new Division(new Numeral(40),new Numeral(0));
         try{
-            System.out.println(1.0*div.left().evaluate()/div.right().evaluate());
+            double k;
+            k= div.left().evaluate()/div.right().evaluate();
+            System.out.println(k);
         }
         catch (ArithmeticException e){
-            System.out.println("“Lỗi chia cho 0");
+            System.out.println("Khong the chia cho so 0");
         }
     }
 
