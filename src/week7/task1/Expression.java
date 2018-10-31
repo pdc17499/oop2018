@@ -1,10 +1,11 @@
 package week7.task1;
 
 public abstract  class Expression {
-    abstract  public  String toString();
 
-    public int evaluate(){
-        return 0;
-    };
 
+    abstract int evaluate();
+    @Override
+    public  String toString(){
+        return "Expression";
+    }
 }

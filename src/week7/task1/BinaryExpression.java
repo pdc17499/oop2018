@@ -1,15 +1,10 @@
 package week7.task1;
 
-public class BinaryExpression {
-    public Expression left(){
-
-    }
-    public Expression right (){
+public abstract  class BinaryExpression extends  Expression {
+    public abstract  Expression left();
 
 
-    }
-    public  String toString(){
-        return "BinaryExpression";
-    }
+    public abstract  Expression right ();
+
 
 }
